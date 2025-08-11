@@ -23,10 +23,9 @@ public static class Menu
             return;
         }
 
-        bool continuar = true;
-
-        while (continuar)
+        while (true)
         {
+            Console.Clear();
             Console.WriteLine("==================================================================");
             Console.WriteLine("1 - Cadastrar veículo");
             Console.WriteLine("2 - Remover veículo");
@@ -46,7 +45,7 @@ public static class Menu
                     Es.ListarVeiculos();
                     break;
                 case 4:
-                    continuar = false;
+                    Environment.Exit(0);
                     break;
                 default:
                     Console.Clear();

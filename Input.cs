@@ -47,4 +47,10 @@ public static class Input
             return LerInt(mensagem);
         }
     }
+
+    public static void Await()
+    {
+        Console.WriteLine("Aperte qualquer tecla para continuar.");
+        Console.ReadKey();
+    }
 }

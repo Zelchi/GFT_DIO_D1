@@ -8,6 +8,7 @@ public class Estacionamento(decimal PrecoInicial, decimal PrecoPorHora)
     {
         Console.Clear();
         Veiculos.Add(Input.LerString("Digite a placa do veículo para estacionar:"));
+        Input.Await();
     }
 
     public void RemoverVeiculo()
@@ -25,6 +26,7 @@ public class Estacionamento(decimal PrecoInicial, decimal PrecoPorHora)
         {
             Console.WriteLine("Desculpe, esse veículo não está estacionado aqui. Confira se digitou a placa corretamente");
         }
+        Input.Await();
     }
 
     public void ListarVeiculos()
@@ -42,5 +44,6 @@ public class Estacionamento(decimal PrecoInicial, decimal PrecoPorHora)
         {
             Console.WriteLine("Não há veículos estacionados.");
         }
+        Input.Await();
     }
 }
