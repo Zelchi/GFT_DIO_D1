@@ -6,12 +6,12 @@ public static class Menu
 
     public static void ConfigInicial()
     {
+        Console.Clear();
         Console.WriteLine("Olá, bem-vindo ao sistema de estacionamento!");
         decimal precoPorHora = Input.LerDecimal("Por favor, insira o preço por hora: ");
         decimal precoInicial = Input.LerDecimal("Por favor, insira o preço inicial: ");
         Es = new Estacionamento(precoInicial, precoPorHora);
-
-        Console.Clear();
+        Input.Await();
     }
 
     public static void ExibirMenu()
@@ -50,6 +50,7 @@ public static class Menu
                 default:
                     Console.Clear();
                     Console.WriteLine("Opção inválida");
+                    Input.Await();
                     break;
             }
         }

@@ -50,7 +50,7 @@ public static class Input
 
     public static void Await()
     {
-        Console.WriteLine("Aperte qualquer tecla para continuar.");
+        Console.WriteLine("\nAperte qualquer tecla para continuar.");
         Console.ReadKey();
     }
 }
