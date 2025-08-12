@@ -26,12 +26,12 @@ public static class Menu
         while (true)
         {
             Console.Clear();
-            Console.WriteLine("==================================================================");
-            Console.WriteLine("1 - Cadastrar veículo");
-            Console.WriteLine("2 - Remover veículo");
-            Console.WriteLine("3 - Listar veículos");
-            Console.WriteLine("4 - Encerrar");
-            Console.WriteLine("==================================================================");
+            Console.WriteLine("|=======================|");
+            Console.WriteLine("| 1 - Cadastrar veículo |");
+            Console.WriteLine("| 2 - Remover veículo   |");
+            Console.WriteLine("| 3 - Listar veículos   |");
+            Console.WriteLine("| 4 - Encerrar          |");
+            Console.WriteLine("========================|");
 
             switch (Input.LerInt("Por favor, escolha uma opção: "))
             {
